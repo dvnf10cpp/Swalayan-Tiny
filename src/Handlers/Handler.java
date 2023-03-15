@@ -122,7 +122,6 @@ public class Handler
                 Functions.reduceGrocery(struk);
                 System.out.printf("Press enter ");
                 in.nextLine();
-                Routes.appRoutes(user);
                 return;
             }
             barang.setStok(barang.getStok() - jumlah);
