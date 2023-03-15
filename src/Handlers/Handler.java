@@ -48,13 +48,6 @@ public class Handler
         while(!pinSama && !user.getStatusBlock())
         {
             user.addTryCounter();
-            try 
-            {
-                UserDatabase.saveData();
-            } catch (Exception e)
-            {
-                Functions.errorMessage(e);
-            }
             System.out.printf("PIN yang dimasukkan salah!\n");
             pin = Input.inputPinHandler();
             pinSama = user.getPin().equals(pin); 

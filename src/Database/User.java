@@ -1,5 +1,7 @@
 package Database;
 
+import Handlers.Functions;
+
 public class User
 {
     private String nama;
@@ -32,6 +34,13 @@ public class User
     public void addTryCounter()
     {
         tryCounter++;
+        try 
+        {
+            UserDatabase.saveData();
+        } catch (Exception e)
+        {
+            Functions.errorMessage(e);
+        }
         setBlocked();
     }
 
@@ -43,7 +52,6 @@ public class User
             System.out.printf("Maaf akses untuk user ini telah keblokir\n");
             System.out.printf("Silahkan hubungi layanan terdekat kami\n");
             System.out.printf("Untuk menonaktifkan status blokir\n");
-            System.exit(0);
         } 
     }
 
