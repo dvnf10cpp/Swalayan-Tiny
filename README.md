@@ -18,6 +18,10 @@ The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
+- `Handlers`: the folder to maintain logic,process and handlers that happened in the system
+- `DataStructure`: the folder to maintain data structure that i made to develop this system easier
+- `Database`: the folder to maintain databases that i use and objects template file
+- `Routes`: the folder to maintain system routes
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
