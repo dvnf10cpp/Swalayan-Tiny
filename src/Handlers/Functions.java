@@ -12,7 +12,7 @@ public class Functions
         double sum = 0;
         for(Pair<Barang,Integer> tmp : data)
         {
-            sum += tmp.getValue();
+            sum += tmp.getValue() * (tmp.getKey().getHarga());
         }
         return sum;
     }

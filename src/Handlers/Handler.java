@@ -108,14 +108,15 @@ public class Handler
             System.out.printf("-".repeat(70));
             System.out.printf("\n");
             System.out.printf("| %-20s | %-20s | %-20s |\n","Barang","Jumlah","Nilai");
+            System.out.printf("-".repeat(70) + "\n"); 
             for(Pair<Barang,Integer> brng : struk)
             {
                 System.out.printf("| %-20s | %-20d | %-20.2f |\n"
                 ,brng.getKey().getNama(),brng.getValue(),(double)brng.getValue() * brng.getKey().getHarga());
-                System.out.printf("-".repeat(70) + "\n"); 
             }
+            System.out.printf("-".repeat(70) + "\n"); 
             total = Functions.getTotal(struk);
-            System.out.printf("Total harga yang harus dibayar : %.2f\n",total);
+            System.out.printf("Total harga yang harus dibayar : Rp %.2f\n",total);
             while(total > user.getSaldo() - 10000) 
             {
                 Functions.reduceGrocery(struk);
@@ -163,9 +164,9 @@ public class Handler
         System.out.printf("Transaksi selesai!\n");
         System.out.printf("Saldo kamu sekarang : %.2f\n",user.getSaldo());
         if(cashback[0] > 0)
-            System.out.printf("Kamu mendapatkan cashbask sebesar : %.2f% untuk struk\n",cashback[0] * 100);
+            System.out.printf("Kamu mendapatkan cashbask sebesar : %.2f%% untuk struk\n",cashback[0] * 100);
         if(cashback[1] > 0)
-            System.out.printf("Cashback sebesar : %.2f% kembali ke saldo kamu!\n",cashback[1] * 100);
+            System.out.printf("Cashback sebesar : %.2f%% kembali ke saldo kamu!\n",cashback[1] * 100);
         System.out.printf("Press enter "); in.nextLine();
         Routes.appRoutes(user);
     }
