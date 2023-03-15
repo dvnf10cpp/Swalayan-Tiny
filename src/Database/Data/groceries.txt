@@ -1,0 +1,15 @@
+Beras;25000;100
+Gula pasir;12000;50
+Minyak goreng;20000;75
+Tepung terigu;10000;80
+Telur ayam;15000;60
+Susu UHT;8000;40
+Roti tawar;5000;120
+Indomie goreng;2000;150
+Kecap manis;12000;40
+Sarden kaleng;8000;30
+Sosis sapi;25000;50
+Coklat batang;10000;100
+Es krim cup;5000;80
+Kopi sachet;5000;90
+Teh celup;8000;69
