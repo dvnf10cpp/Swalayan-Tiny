@@ -8,7 +8,7 @@ It has users.txt and groceries.txt as a file to save data and process that happe
 <br/>
 It's also has login and authentication system to make sure no one can breach your account!
 <br/>
-To play with this demo system, simply just download this whole repostitory and run the App.java
+To play with this demo system, simply just download this whole repostitory, open Swalyan-Tiny-main and run the App.java
 <br/>
 If you found bugs in this system, lemme know ^_^
 
