@@ -169,6 +169,10 @@ public class Handler
         }
         System.out.printf("Transaksi selesai!\n");
         System.out.printf("Saldo kamu sekarang : %.2f\n",user.getSaldo());
+        if(cashback[0] > 0)
+            System.out.printf("Kamu mendapatkan cashbask sebesar : %.2f% untuk struk\n",cashback[0] * 100);
+        if(cashback[1] > 0)
+            System.out.printf("Cashback sebesar : %.2f% kembali ke saldo kamu!\n",cashback[1] * 100);
         System.out.printf("Press enter "); in.nextLine();
         Routes.appRoutes(user);
     }
