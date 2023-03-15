@@ -6,11 +6,11 @@ This project is a project to fulfill my modul assignment.
 <br/>
 It has users.txt and groceries.txt as a file to save data and process that happened in the system.
 <br/>
-It's also has login and authentication system to make sure no one can breach your account
+It's also has login and authentication system to make sure no one can breach your account!
 <br/>
 To play with this demo system, simply just download this whole repostitory and run the App.java
 <br/>
-If you found bugs, lemme know ^_^
+If you found bugs in this system, lemme know ^_^
 
 ## Folder Structure
 
