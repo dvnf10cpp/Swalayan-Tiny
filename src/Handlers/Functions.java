@@ -22,6 +22,11 @@ public class Functions
         System.out.printf("Transaksi gagal\n");
         System.out.printf("Maaf harga barang yang ingin dibeli melebihi saldo\n");
         System.out.printf("Saldo pada akun harus memiliki setidaknya Rp 10.000,00\n");
+        //Transaksi gagal karena melewati batas saldo (user.saldo - 10000)
+        if(true)
+        {
+            return;
+        }
 
         //Dibawah merupakan implementasi jika transaksi tidak gagal
         System.out.printf("Silahkan kurangi barang\n");
