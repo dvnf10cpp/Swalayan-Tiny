@@ -105,7 +105,7 @@ public class Input
         if(saldo > 5_000_000)
             randomNoPelanggan = "74" + randomNoPelanggan.substring(1);
         
-        if(randomNoPelanggan.length() > 8) randomNoPelanggan = randomNoPelanggan.substring(0,8);
+        if(randomNoPelanggan.length() > 10) randomNoPelanggan = randomNoPelanggan.substring(0,10);
         return randomNoPelanggan; 
     } 
 
