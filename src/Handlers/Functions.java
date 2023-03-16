@@ -22,13 +22,6 @@ public class Functions
         System.out.printf("Transaksi gagal\n");
         System.out.printf("Maaf harga barang yang ingin dibeli melebihi saldo\n");
         System.out.printf("Saldo pada akun harus memiliki setidaknya Rp 10.000,00\n");
-        //Transaksi gagal karena melewati batas saldo (user.saldo - 10000)
-        if(true)
-        {
-            return;
-        }
-
-        //Dibawah merupakan implementasi jika transaksi tidak gagal
         System.out.printf("Silahkan kurangi barang\n");
         
         Pair<Barang,Integer> barang = null;
@@ -68,18 +61,14 @@ public class Functions
     {
         try 
         {
-            System.out.print(message);
-            Thread.sleep(350);
-            System.out.print(".");
-            Thread.sleep(550);
-            System.out.print(".");
-            Thread.sleep(650);
-            System.out.print(".");
-            Thread.sleep(850);
-            System.out.print("."); 
-            Thread.sleep(1100);
-            System.out.print(".");
-            System.out.print("\n"); 
+			int miliSecond = 200;
+			System.out.print(message);
+			for(int i = 0; i < 5; i++)
+			{
+				Thread.sleep(miliSecond += 150);
+				System.out.print(".");
+			}
+			System.out.print("\n");
         } catch (Exception e)
         {
             errorMessage(e);
